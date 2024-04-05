@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cats</title>
+  <script defer src="hamburger.js"></script>
+  <script defer src="subscribe.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cats.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <a href="#main" class="header__skiplink">Skip to Content</a>
+    <div class="header__title">
+      <a href="/"><img class="header__logo" src="https://placekitten.com/g/100/100"  alt=""></a>
+      <h1 class="header__pagename">Cats Power the Interenet</h1>
+    </div>
+    <nav class="header__nav">
+      <button class="header__menu" ><i class="header__menu--icon"></i></button>
+      <ul class="menu__list">
+        <li><a class="menu__link" href="index.html">Home</a></li>
+        <li><a class="menu__link" href="cats.html">Famous cats</a></li>
+        <li><a class="menu__link" href="/">Cats Events</a></li>
+      </ul>
+    </nav>
+  </header> 
+  <!-- main -->
+  <main class="main" id="main">
+    <div class="main__card">
+        <h2 class="card__title">Jorts</h2>
+        <!-- the image below is not of the right size, but hand picked because of its availability. The displayed size is defined in css -->
+        <img class="card__img" src="https://placekitten.com/128/128" alt="A closeup photograph of an adorable gray tabby kitten with captivating bright green eyes and a small pink nose. The kitten's fuzzy face is in sharp focus, showcasing its soft fur and delicate whiskers against a slightly blurred background.">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Providen impedit ad fugiat voluptates. </p>
+        <p>Lorem ipsum <button class="card__subscribe">Subscribe</button> quos alias cum a? </p>
+    </div>
+    <div class="main__card">
+        <h2 class="card__title">Jean</h2>
+        <!-- the image below is not of the right size, but hand picked because of its availability. The displayed size is defined in css -->
+        <img class="card__img" src="https://placekitten.com/129/129" alt="Cute gray tabby kitten with bright green eyes, soft fur.">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Providen impedit ad fugiat voluptates. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Providen impedit ad fugiat voluptates. </p>
+        <p>Lorem ipsum <button class="card__subscribe">Subscribe</button> quos alias cum a? </p>
+    </div>
+    <div class="main__card">
+        <h2 class="card__title">Maru</h2>
+        <!-- the image below is not of the right size, but hand picked because of its availability. The displayed size is defined in css -->
+        <img class="card__img" src="https://placekitten.com/100/100" alt="A Cute gray tabby kitten with bright green eyes, soft fur.">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Providen impedit ad fugiat voluptates. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Providen impedit ad fugiat voluptates. Lorem ipsum dolor sit amet consectetur. </p>
+        <p>Lorem ipsum <button class="card__subscribe">Subscribe</button> quos alias cum a? </p>
+    </div>
+    <div class="main__card">
+        <h2 class="card__title">Nyancat</h2>
+        <!-- the image below is not of the right size, but hand picked because of its availability. The displayed size is defined in css -->
+        <img class="card__img" src="https://placekitten.com/125/125" alt="A fluffy gray tabby kitten with captivating bright green eyes gazes directly at the camera with an innocent yet curious expression. Its small pink nose and whiskers add to its adorable appearance.">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Providen impedit ad fugiat voluptates. </p>
+        <p>Lorem ipsum <button class="card__subscribe">Subscribe</button> quos alias cum a? </p>
+    </div>
+    <div class="main__card">
+        <h2 class="card__title">Grumpy Cat</h2>
+        <!-- the image below is not of the right size, but hand picked because of its availability. The displayed size is defined in css -->
+        <img class="card__img" src="https://placekitten.com/90/90" alt="A fluffy gray tabby kitten with captivating bright green eyes gazes directly at the camera with an innocent yet curious expression. Its small pink nose and whiskers add to its adorable appearance.">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Providen impedit ad fugiat voluptates. </p>
+        <p>Lorem ipsum <button class="card__subscribe">Subscribe</button> quos alias cum a? </p>
+    </div>
+    <div class="main__card">
+        <h2 class="card__title">Lil Bub</h2>
+        <!-- the image below is not of the right size, but hand picked because of its availability. The displayed size is defined in css -->
+        <img class="card__img" src="https://placekitten.com/50/50" alt="A fluffy gray tabby kitten with captivating bright green eyes gazes directly at the camera with an innocent yet curious expression. Its small pink nose and whiskers add to its adorable appearance.">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Providen impedit ad fugiat voluptates. </p>
+        <p>Lorem ipsum <button class="card__subscribe">Subscribe</button> quos alias cum a? </p>
+    </div>
+    <!-- the pop up modal  -->
+    <dialog class="main__modal">
+      <form class="main__subscribe" action="./subscribe" method="POST">
+        <h2>Subscribe to the latest Mews</h2>
+        <div class="modal__field">
+          <label for="modal__email" class="modal__label">Email: <p class="modal__reminder">* required</p></label>
+          <input type="text" name="modal__email" id="modal__email" class="modal__email"></input>
+          <div class="modal__email--error modal__error"></div>
+        </div>
+        <div class="modal__field">
+          <label for="modal__confirm" class="modal__label">Confirm Email: <p class="modal__reminder">* required</p></label>
+          <input type="text" name="modal__confirm" id="modal__confirm" class="modal__confirm"></input>
+          <div class="modal__confirm--error modal__error"></div>
+        </div>
+        <div class="modal__buttons">
+          <button class="modal__subscribe" type="submit">Subscribe</button>
+          <button class="modal__cancel" type="button">Cancel</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <ul class="footer__menu">
+      <li><a class="footer__link" href="/">Privacy Policy</a></li>
+      <li><a class="footer__link" href="/">Work for Us</a></li>
+      <li><a class="footer__link" href="/">Contact Us</a></li>
+      <li><a class="footer__link" href="/">Social Media</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
